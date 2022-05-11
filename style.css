@@ -6,6 +6,9 @@ body{
     overflow-x: hidden;
 }
 
+/* Track */
+
+
 .navbar{
     background-color: black;
     width: 100vw;
@@ -13,6 +16,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
 }
 .main{
     height: 98vh;
@@ -20,30 +25,7 @@ body{
     margin: 2% auto;
     /* padding: 2%; */
 }
-.home{
-    /* background-color: rgb(5, 82, 105); */
-    /* height: 98%;
-    width: 8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1%; */
-    /* background-image: 
-        linear-gradient(
-            transparent 0%,
-            transparent 90%,
-            #E04D01 90%,
-            #E04D01 100%
-        );
-        background-repeat: no-repeat;
-        background-size: 0% 100%;
-        background-position-x: right;
-        transition: background-size 300ms; */
-}
-/* .home:hover{
-    background-size: 100% 100%;
-    background-position-x: left;
-} */
+
 
 .navItems{
     height: 98%;
@@ -212,10 +194,15 @@ body{
 .topstmain{
     height: 90%;
     width: 40%;
-    border-right: 2px solid #000;
-    padding-right: 3%;
+    
+    /* transition: transform 250ms ease-in-out; */
+    
     
 }
+.topstmain:hover{
+    transform: scale(1.01);
+}
+
 .boriaimg{
     margin-top: 1%;
     height: 60%;
@@ -261,7 +248,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    border-left: 2px solid #000;
+    padding-left: 2%;
     
 }
 .bulletImg{
@@ -288,15 +276,20 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    
-
 }
+.bullet1:hover{
+    transform: scale(1.01);
+}
+
 .bullet2{
     height: 20%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     
+}
+.bullet2:hover{
+    transform: scale(1.01);
 }
 
 .bullet3{
@@ -305,6 +298,9 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+.bullet3:hover{
+    transform: scale(1.01);
+}
 
 .bullet4{
     height: 20%;
@@ -312,7 +308,9 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-
+.bullet4:hover{
+    transform: scale(1.01);
+}
 
 .latest-news{
 height: 96%;
@@ -346,32 +344,75 @@ box-sizing: border-box;
 }
 
 
-.cart{
+.cart1{
+   height: 65%;
+   width: 100%;
+     
+}
+.cartallign{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.Politics{
+    height: 100%;
+    width: fit-content;
+    font-size: 3rem;
+    color: #E04D01;
+    display: flex;
+    align-items: center;
+}
+
+.polline{
+    height: 4%;
+    width: 60%;
+    background-color: #E04D01;
+    
+}
+
+.carditem{
     min-width: 100vw;
-    height: 40%;
+    height: 80%;
     display: flex;
     align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
-     
 }
-
-
 .card{
     height: 100%;
-    width: 20%;
-    min-width: 150px;
-    border: 1px solid #ffaab4;
-    margin-right: 4%;
+    flex: 0.4;
+    min-width: 230px;
+    margin-right: 2%;
     object-fit: contain;
+    text-align: left;
     
 }
 
 .card>img{
-    height: 100%;
+    height: 70%;
     width: 100%;
+    margin-bottom: 2%;
 }
+.card a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 30%;
+    text-decoration-line: underline;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 .sublines{
