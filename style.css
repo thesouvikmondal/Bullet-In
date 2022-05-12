@@ -465,3 +465,13 @@ box-sizing: border-box;
     font-size: smaller;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+.footer{
+    height: 20vw;
+    width: 100vh;
+    display: flex;
+    background-color: #251D3A;
+    margin-right: 0%;
+
+}
