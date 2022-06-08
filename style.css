@@ -20,7 +20,7 @@ body{
     top: 0;
 }
 .main{
-    height: 98vh;
+    min-height: 98vh;
     width: 96vw;
     margin: 2% auto;
     /* padding: 2%; */
@@ -405,16 +405,6 @@ box-sizing: border-box;
 
 }
 
-
-
-
-
-
-
-
-
-
-
 .sublines{
     height: 30%;
     width: 100%;
@@ -466,12 +456,11 @@ box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .footer{
-    height: 20vw;
-    width: 100vh;
+    height: 15vh;
+    width: 100%;
+    background-color: #E04D01;
     display: flex;
-    background-color: #251D3A;
-    margin-right: 0%;
-
+    justify-content: left;
+    
 }
